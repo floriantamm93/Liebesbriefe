@@ -6,25 +6,17 @@ const letters = [
   {
     id: "2026-08-11",
     date: "11. August 2026",
-    title: "Der Anfang von etwas Schönem",
-    salutation: "Mein liebster Mensch,",
+    title: "Der erste Schritt",
+    salutation: "An die Person die es am meisten verdient",
     paragraphs: [
-      "[HIER KOMMT DER LIEBESBRIEF HINEIN]",
-      "Ersetze diesen Platzhalter später durch deine eigenen Worte. Jeder Text in Anführungszeichen wird zu einem eigenen Absatz."
+      "Mach dich auf viele Briefe gefasst.",
+        "Hey Chantal. Dein Tag heute war sichtlich beschissen und deswegen dachte ich mir, dass ich dir etwas schönes zukommen lasse.",
+        "Ich möchte dir auf diese Art und Weise täglich einen kleinen Brief hier hinterlassen für dich damit du dich jeden Tag auf etwas freuen kannst.",
+        "Ob du diese Briefe liest ist natürlich ganz dir überlassen.",
+        "Das du heute erfahren hast, dass die Betreuung erstmal länger funktioniert hat mich unglaublich gefreut weil du so dich auf die anderen Sachen besser konzentrieren kannst"
     ],
-    closing: "In Liebe,",
-    signature: "Dein Name"
-  },
-  {
-    id: "beispiel-gestern",
-    date: "10. August 2026",
-    title: "Ein Gedanke nur für dich",
-    salutation: "Liebe Chantal,",
-    paragraphs: [
-      "Dies ist ein Beispiel für einen älteren Brief. Du kannst diesen Eintrag vollständig ersetzen oder löschen."
-    ],
-    closing: "Von Herzen,",
-    signature: "Dein Name"
+    closing: "Dein",
+    signature: "Flo"
   }
 ];
 
