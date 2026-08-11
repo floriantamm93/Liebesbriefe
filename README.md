@@ -1,6 +1,6 @@
-# Ein Brief für Chantal
+# Liebesbriefe für Chantal
 
-Eine kleine statische OnePage-Webseite als digitaler Liebesbrief. Sie benötigt nur HTML, CSS und JavaScript und ist für GitLab Pages vorbereitet.
+Eine statische OnePage-Webseite als digitaler Liebesbrief. Sie benötigt nur HTML, CSS und JavaScript und wird über GitHub Pages veröffentlicht.
 
 ## Lokal ansehen
 
@@ -12,6 +12,6 @@ Alle Briefe stehen am Anfang von `js/script.js` in der Liste `letters`. Für ein
 
 Die wichtigsten Farben befinden sich am Anfang von `css/style.css` unter `:root`. Dauer und Ablauf der Animationen lassen sich bei `break-seal`, `open-flap`, `reveal-scroll` und `roll-down` anpassen.
 
-## GitLab Pages
+## GitHub Pages
 
-Projekt in ein GitLab-Repository übertragen und auf den Standard-Branch pushen. Die mitgelieferte `.gitlab-ci.yml` kopiert die statischen Dateien in das Pages-Artefakt `public`.
+In den Repository-Einstellungen unter `Settings → Pages` den Branch `main` und den Ordner `/ (root)` als Quelle auswählen.
