@@ -93,7 +93,7 @@ function returnToArchive() {
   openButton.disabled = false;
   openButton.setAttribute("aria-expanded", "false");
   scroll.setAttribute("aria-hidden", "true");
-  document.title = "Flo's Briefe für CHantal";
+  document.title = "Flo's Briefe für Chantal";
   window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
   window.setTimeout(() => openButton.focus({ preventScroll: true }), reducedMotion ? 0 : 500);
 }
