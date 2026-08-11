@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#100d12">
+  <meta name="description" content="Ein persönlicher Brief für Chantal.">
+  <title>Ein Brief für Chantal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="moon"></span>
+    <span class="gothic-arch"></span>
+    <span class="branch branch--left"></span>
+    <span class="branch branch--right"></span>
+    <span class="bat bat--1"><i></i></span>
+    <span class="bat bat--2"><i></i></span>
+    <span class="bat bat--3"><i></i></span>
+    <span class="glow glow--one"></span>
+    <span class="glow glow--two"></span>
+    <span class="mote mote--1"></span>
+    <span class="mote mote--2"></span>
+    <span class="mote mote--3"></span>
+    <span class="mote mote--4"></span>
+    <span class="mote mote--5"></span>
+  </div>
+
+  <main class="experience">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Nur für dich</p>
+      <h1 id="page-title">Briefe für Chantal</h1>
+      <div class="title-ornament" aria-hidden="true"><span>✦</span></div>
+      <p class="intro__hint">Manche Worte gehören nicht in eine Nachricht.</p>
+
+      <button class="letter" id="open-letter" type="button" aria-label="Wachssiegel brechen und Brief öffnen" aria-controls="scroll" aria-expanded="false">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope__paper"></span>
+          <span class="envelope__body"></span>
+          <span class="envelope__flap"></span>
+          <span class="seal">
+            <span class="seal__initial">C</span>
+          </span>
+        </span>
+        <span class="letter__prompt">Ausgewählten Brief öffnen</span>
+      </button>
+
+      <section class="archive" aria-labelledby="archive-title">
+        <div class="archive__heading">
+          <span aria-hidden="true"></span>
+          <h2 id="archive-title">Deine Briefe</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <p class="archive__hint">Wähle einen Brief aus</p>
+        <div class="archive__list" id="letter-list"></div>
+      </section>
+      <div class="rose-corner rose-corner--left" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="rose-corner rose-corner--right" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+
+    <section class="reveal" id="scroll" aria-labelledby="letter-title" aria-hidden="true">
+      <div class="scroll-shell">
+        <div class="scroll-roll scroll-roll--top" aria-hidden="true"></div>
+        <article class="parchment" id="printable-letter">
+          <div class="parchment__ornament" aria-hidden="true">❦</div>
+          <p class="letter-date">Für Chantal</p>
+          <h2 id="letter-title">Mein liebster Mensch,</h2>
+
+          <div class="letter-copy">
+            <p class="placeholder">[HIER KOMMT DER LIEBESBRIEF HINEIN]</p>
+            <p>Ersetze diesen Platzhalter später durch deine eigenen Worte. Du kannst hier beliebig viele Absätze einfügen.</p>
+          </div>
+
+          <p class="signature">In Liebe,<br><span>Dein Name</span></p>
+          <div class="parchment__ornament parchment__ornament--bottom" aria-hidden="true">❦</div>
+        </article>
+        <div class="scroll-roll scroll-roll--bottom" aria-hidden="true"></div>
+      </div>
+
+      <div class="letter-actions">
+        <button class="action-button action-button--back" id="back-to-archive" type="button">
+          <span aria-hidden="true">←</span>
+          Zurück zu allen Briefen
+        </button>
+        <button class="action-button" id="print-letter" type="button">
+          <span aria-hidden="true">⌁</span>
+          Brief ausdrucken
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <noscript>
+    <p class="noscript">Bitte aktiviere JavaScript, um den Brief zu öffnen.</p>
+  </noscript>
+</body>
+</html>
