@@ -18,7 +18,7 @@ const letters = [
         "Ich bin immer noch extrem froh darüber mit dir Kontakt aufgenommen zu haben. Denn wer hätte erahnen können, dass hinter deinem IG Profil eine so unglaubliche Person steckt. Die einen extrem guten Gerechtigkeitssinn, unglaublich kreativ, liebend wie keine Zweite und Humorvoll wie der beste Comedian ist ",
         "Bei dem Gedanken an all die kommenden Momente mit dir muss ich unweigerlich lächeln ☺️",
         "Damit das hier nicht ausartet soll es für heute genügen und morgen wird der nächste Brief verfügbar sein.",
-        "Ich hoffe du freust dich darüber 🤗"
+        "Ich hoffe du freust dich darüber 🤗 \n Fühl dich gedrückt und geliebt!"       
     ],
     closing: "Dein",
     signature: "Flo 🖤"
