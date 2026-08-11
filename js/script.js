@@ -6,17 +6,22 @@ const letters = [
   {
     id: "2026-08-11",
     date: "11. August 2026",
-    title: "Der erste Schritt",
-    salutation: "An die Person die es am meisten verdient",
+    title: "Der allererste Brief",
+    salutation: "An die Person die es am meisten verdient - dich Chantal!",
     paragraphs: [
       "Mach dich auf viele Briefe gefasst.",
         "Hey Chantal. Dein Tag heute war sichtlich beschissen und deswegen dachte ich mir, dass ich dir etwas schönes zukommen lasse.",
         "Ich möchte dir auf diese Art und Weise täglich einen kleinen Brief hier hinterlassen für dich damit du dich jeden Tag auf etwas freuen kannst.",
         "Ob du diese Briefe liest ist natürlich ganz dir überlassen.",
-        "Das du heute erfahren hast, dass die Betreuung erstmal länger funktioniert hat mich unglaublich gefreut weil du so dich auf die anderen Sachen besser konzentrieren kannst"
+        "Das du heute erfahren hast, dass die Betreuung erstmal länger funktioniert hat mich unglaublich gefreut weil du so dich auf die anderen Sachen besser konzentrieren kannst",
+        "Es gibt für diesen Tag ein Wort des Tages und das lautet: !Kaizen! Passend zu der heutigen Nachricht sollst du deinen Alltag dadurch besser optimieren können. Vielleicht nicht direkt heute aber in der kommenden Zeit damit wieder mehr Zeit für schöne Dinge bleibt!",
+        "Ich bin immer noch extrem froh darüber mit dir Kontakt aufgenommen zu haben. Denn wer hätte erahnen können, dass hinter deinem IG Profil eine so unglaubliche Person steckt. Die einen extrem guten Gerechtigkeitssinn, unglaublich kreativ, liebend wie keine Zweite und Humorvoll wie der beste Comedian ist ",
+        "Bei dem Gedanken an all die kommenden Momente mit dir muss ich unweigerlich lächeln ☺️",
+        "Damit das hier nicht ausartet soll es für heute genügen und morgen wird der nächste Brief verfügbar sein.",
+        "Ich hoffe du freust dich darüber 🤗"
     ],
     closing: "Dein",
-    signature: "Flo"
+    signature: "Flo 🖤"
   }
 ];
 
@@ -88,7 +93,7 @@ function returnToArchive() {
   openButton.disabled = false;
   openButton.setAttribute("aria-expanded", "false");
   scroll.setAttribute("aria-hidden", "true");
-  document.title = "Briefe für Chantal";
+  document.title = "Flo's Briefe für CHantal";
   window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
   window.setTimeout(() => openButton.focus({ preventScroll: true }), reducedMotion ? 0 : 500);
 }
