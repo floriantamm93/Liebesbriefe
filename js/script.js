@@ -22,7 +22,37 @@ const letters = [
     ],
     closing: "Dein",
     signature: "Flo 🖤"
-  }
+    },
+    {
+        id: "2026-08-12",
+        date: "12. August 2026",
+        title: "Tag 2",
+        salutation: "Tag der Sonnenfinsternis",
+        paragraphs: [
+            "Heute ist ein komischer Tag. Gestern hast du mir mit deinen Murmeln noch den Kopf verdreht und heute hätte ich super gern die Sonnenfinsternis mit dir gemeinsam erlebt.",
+            "Als du mich gefragt hast ob ich sauer auf dich sei sagte ich: Nein ich verstehe deine Situation ja und das ist auch die Wahrheit.Es hat mich nicht sauer gemacht sondern raurig, weil ich allzugern diese vielleicht letzte Mal Sonnenfinsternis mit dir gemeinsam sehen möchte.",
+            "Falls es dir noch nicht aufgefallen ist, du hast schon jetzt einen besonderen Platz in meinem Leben und ich würde diesen Platz all zu gern vergrößern.",
+            "Dafür werde ich aufjedenfall weiterhin alles geben denn ich möchte dein Zuhause sein in dem du dich wohl und geborgen fühlst.Wo du nicht ständig dich selbst fragen musst ob du genug bist oder dir das Gefühl gibt leer oder ersetzbar zu sein.",
+            "Wenn ich dir eine Fähigkeit geben könnte dann wäre es, dass du die Welt durch meine Augen siehst.Denn nur dann kannst du begreifen, wie einzigartig du für mich bist.Natürlich spielt es eine enorme Rolle wie man sich IRL versteht aber ich bin zuversichtlich, dass es nicht großartig anders ist als momentan. ",
+            "Nunja ich muss mich selbst drosseln sonst schreibe ich noch stundenlang weiter.",
+            "Sei dir gewiss ich denk an dich öfter als du das vielleicht ahnst.",
+
+            "https://open.spotify.com/track/1UzTXathgPOWc8vGtrb5FY?si=_DLUz3ywSd6EcqEWa_rSwA&utm_source=copy-link&sci=spotify%3Acard-config%3A6zsxeb7o7ch2fQWkYgsyJ6",
+
+            "Wie im Song beschrieben:",
+            "Baby it is not an Illusion",
+            "I just want you to stay",
+            "I don't care if it's right or wrong",
+            "I'll take you either",
+            "Tell me it's not a delusion ",
+            "I'm caught in a midnight love",
+            "Won't let you slip away 💜🖤 ",
+
+            "https://www.instagram.com/reels/Db6sB0oTwtO/"
+        ],
+        closing: "Dein",
+        signature: "Flo 🖤"
+    }
 ];
 
 const openButton = document.querySelector("#open-letter");
