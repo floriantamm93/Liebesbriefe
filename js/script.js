@@ -80,25 +80,25 @@ https://www.instagram.com/reels/Db6sB0oTwtO/
 
         Jenseits meiner Reichweite.
 
-        Zu deinen Ohren schicke ich Worte auf Reise
-        doch auf unerklärbarer weise
-        wirken sie fast zu leise
-        denn was du suchst sind Beweise
+        Zu deinen Ohren schicke ich Worte auf Reise\n
+        doch auf unerklärbarer weise\n
+        wirken sie fast zu leise\n
+        denn was du suchst sind Beweise\n
 
-        Nun zeige ich dir Gesten
-        Doch deine Augen scheinen zu resten
-        Wir zwei wären die besten
-        Würdest du dich trauen es zu testen
+        Nun zeige ich dir Gesten\n
+        Doch deine Augen scheinen zu resten\n
+        Wir zwei wären die besten\n
+        Würdest du dich trauen es zu testen\n
 
-        Die Art wie du denkst wie du fühlst wie du lachst
-        und wie du meine Tage heller machst
-        wie du mit kleinen Worten Feuer entfachst
-        sind Dinge wie du mich anmachst
+        Die Art wie du denkst wie du fühlst wie du lachst\n
+        und wie du meine Tage heller machst\n
+        wie du mit kleinen Worten Feuer entfachst\n
+        sind Dinge wie du mich anmachst\n
         
-        Je mehr ich von dir erfahren darf
-        desto mehr wird dieses Bild von dir scharf
-        Jedes kleine Detail auf das ich von dir traf
-        Weckt in mir den sehnsuchtsvollen Graf
+        Je mehr ich von dir erfahren darf\n
+        desto mehr wird dieses Bild von dir scharf\n
+        Jedes kleine Detail auf das ich von dir traf\n
+        Weckt in mir den sehnsuchtsvollen Graf\n
 
 
         Hui das hat ne Menge Hirnschmalz gefressen ich hoffe es gefällt dir 🤗
