@@ -159,7 +159,9 @@ https://www.instagram.com/reels/Db6sB0oTwtO/
         aus als jede Sternschnuppe oder Sonnenfinsternis es jemals sein könnte.
 
         Was ich damit sagen will:
-        Du bist einzigartig schön für mich.
+        Du bist einzigartig schön für mich und das was ich von dir kenne
+        reicht bereits dafür, dass ich denke:
+        Du bist es wert, nicht einfach aufzugeben!
 
         https://open.spotify.com/intl-de/track/4cExQhQ0i34yZcoDsHFMV6?si=19850af72ac44684
 
