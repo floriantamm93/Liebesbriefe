@@ -124,7 +124,7 @@ https://www.instagram.com/reels/Db6sB0oTwtO/
         },
 {
         id: "2026-08-14",
-        date: "13. August 2026",
+        date: "14. August 2026",
         title: "Scheiße heiß",
         salutation: "Warum ich dich bewundere",
         paragraphs: toParagraphs(`
