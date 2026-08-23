@@ -8,7 +8,7 @@ Eine statische OnePage-Webseite als digitaler Liebesbrief. Sie benötigt nur HTM
 
 ## Briefe hinzufügen und anpassen
 
-Alle Briefe stehen am Anfang von `js/script.js` in der Liste `letters`. Für einen neuen Tagesbrief den obersten Eintrag kopieren und `id`, `date`, `title`, `salutation`, `paragraphs`, `closing` und `signature` anpassen. Jeder Eintrag in `paragraphs` wird als eigener Absatz angezeigt. Der oberste Brief ist automatisch vorausgewählt.
+Alle Briefe stehen am Anfang von `js/script.js` in der Liste `letters`. Für einen neuen Tagesbrief einen Eintrag kopieren und `id`, `date`, `time`, `title`, `salutation`, `paragraphs`, `closing` und `signature` anpassen. Die Uhrzeit wird als `time: "22:47"` eingetragen; fehlt das Feld, wird nur das Datum angezeigt. Jeder Eintrag in `paragraphs` wird als eigener Absatz angezeigt.
 
 Die wichtigsten Farben befinden sich am Anfang von `css/style.css` unter `:root`. Dauer und Ablauf der Animationen lassen sich bei `break-seal`, `open-flap`, `reveal-scroll` und `roll-down` anpassen.
 
