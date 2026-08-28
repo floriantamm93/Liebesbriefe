@@ -831,8 +831,6 @@ https://www.instagram.com/reels/Db6sB0oTwtO/
         zu fragen und die Gedanken, dass es für mich zu anstregend usw
         sein würde. 
 
-        https://www.instagram.com/p/DcjRjtSFUg8/?igsi=MWV3eHh6N2tjd2ExYQ%3D%3D&img_index=1
-
         Die Welt darf dein Strahlen sehen auch wenn es momentan
         unter einem Berg von dunklen Geschwüren steckt.
 
@@ -851,6 +849,8 @@ https://www.instagram.com/reels/Db6sB0oTwtO/
 
         Das war so unglaublich verzaubernd sag ich dir!
         Das nächste Mal können wir das vielleicht gemeinsam beobachten.
+
+        https://open.spotify.com/intl-de/track/6VaUjrqbfKjOtLaaGE3biP?si=b98858778f114063
         
 
     `),
