@@ -1288,22 +1288,6 @@ https://www.instagram.com/reels/Db6sB0oTwtO/
     `),
         closing: "Mach dir ne schöne Nacht!",
         signature: "Dein nicht so heimlicher verehrer Flo 😝"
-    },
-    {
-        id: "2026-09-07.2",
-        date: "07.2. September 2026",
-        time: "17:30",
-        title: "Back to the roots",
-        password: "Sexyschmexy",
-        passwordHint: "About you",
-        salutation: "Na du bezaubernd schöne!",
-        paragraphs: toParagraphs(`
-       
-        Verarscht.
-
-    `),
-        closing: "See you soon!",
-        signature: "The Mephistopheles Flo 🖤"
     }
 ];
 
