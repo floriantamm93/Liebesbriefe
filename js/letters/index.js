@@ -33,6 +33,7 @@ import letter32 from "./2026-09-14.js?v=2026-09-16";
 import letter33 from "./2026-09-15.js?v=2026-09-16";
 import letter34 from "./2026-09-16.js?v=2026-09-16";
 import letter35 from "./2026-09-17.js?v=2026-09-17";
+import letter36 from "./2026-09-17.js?v=2026-09-18";
 
 // Die Reihenfolge hier bestimmt die Archivansicht und den vorausgewählten Brief.
 export const letters = [
@@ -71,4 +72,5 @@ export const letters = [
     letter33,
     letter34,
     letter35,
+    letter36,
 ];
