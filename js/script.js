@@ -1,4 +1,4 @@
-import { letters } from "./letters/index.js?v=2026-09-21";
+import { letters } from "./letters/index.js?v=2026-09-22";
 
 const openButton = document.querySelector("#open-letter");
 const printButton = document.querySelector("#print-letter");
