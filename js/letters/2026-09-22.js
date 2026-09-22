@@ -25,12 +25,19 @@ export default {
     oder deine Bilder sehe bzw dich IRL treffe - was gerne öfter
     passieren dürfte 🤣 - weiß ich wieder warum ich mich in dich verschossen habe.
     Denn für mich bist du das hier:
+
     https://www.instagram.com/p/DdMVmqqiEQz/?img_index=2&stkn=em55ZTVyNmw2em1v
+
     Und das hier!
+
     https://www.instagram.com/p/Ddji0HZNwiQ/?stkn=MW12aWRqeDExbnc1Nw%3D%3D
+
     Denn du hast mir das gegeben:
+
     https://www.instagram.com/p/DdIWCk8m8_b/?stkn=MTdpdTZ2aHZvbzZhZw%3D%3D&img_index=1
+
     und ich werde:
+
     https://www.instagram.com/p/DdknDErKtoX/?stkn=Mm5jbGNkdTNzMXpj
 
     Und am liebsten würde ich allen Ex's das hier mitteilen: 😡😡😡
