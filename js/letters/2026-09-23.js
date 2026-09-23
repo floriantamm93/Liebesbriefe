@@ -1,4 +1,4 @@
-import { toParagraphs } from "./helpers.js?v=2026-09-23";
+import { toParagraphs } from "./helpers.js?v=2026-09-23-2";
 
 export default {
     id: "2026-09-23",
@@ -14,14 +14,16 @@ export default {
     Hiermit ist der vierzigste Brief aufm Weg zu dir.
     Der letzte Tag bevor das Belgien Wochenende beginnt C:
     Da du noch soviel zu schaffen hast halte ich es heute kürzer.
-    Ich weiß leider nicht genau was wie und warum dein Vater auf einmal
-    da war aber ich hoffe wirklich vom tiefsten Herzen, dass es
-    eine gute Begegnung war 🙏🏼
-    Ich weiß, dass das Verhältnis nicht gut war/ist aber ich glaube
-    eine Person mit der man groß geworden ist bleibt am Ende eine Bezugsperson.
 
-    Nach solchen Momenten nicht für dich da sein zu können bzw dir nicht helfen
-    zu können fühlt sich echt nicht schön an 🥺
+    Ich weiß leider nicht genau, was, wie und warum dein Vater auf einmal
+    da war, aber ich hoffe wirklich von Herzen, dass die Begegnung okay für dich war 🙏🏼
+    Ich weiß, dass euer Verhältnis nicht das einfachste ist und hoffe einfach,
+    dass dich das heute nicht noch zusätzlich zu sehr mitgenommen hat.
+
+    In solchen Momenten wäre ich natürlich gerne bei dir oder würde dir
+    wenigstens ein bisschen was abnehmen 🥺
+    Aber ich hoffe, du konntest das Ganze so gut wie möglich verarbeiten
+    und bekommst den restlichen Belgien-Kram noch entspannt erledigt.
 
     Ich hoffe du konntest es trotzdem so gut wie möglich verarbeiten.
     Und das es dich nicht aufhält die Sachen für Belgien zu erledigen.
