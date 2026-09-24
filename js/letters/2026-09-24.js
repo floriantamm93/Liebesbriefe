@@ -1,4 +1,4 @@
-import { toParagraphs } from "./helpers.js?v=2026-09-24";
+import { toParagraphs } from "./helpers.js?v=2026-09-24-2";
 
 export default {
     id: "2026-09-24",
