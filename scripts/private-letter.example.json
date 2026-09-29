@@ -1,0 +1,11 @@
+{
+  "title": "Nur für dich",
+  "hints": [],
+  "intro": [{"type": "text", "text": "[Deine persönliche Einleitung]\n\nDieser Brief ist ein Geschenk für dich. Du entscheidest selbst, wann du ihn liest oder schließt. Daraus entsteht keine Erwartung an unser Treffen."}],
+  "chapters": [
+    {"title": "Der Anfang", "blocks": [{"type": "text", "text": "[Text für Runde 1 – erster Abschnitt]"}, {"type": "text", "text": "[Hier bei Bedarf Bildblock 1 einfügen]"}, {"type": "text", "text": "[Text für Runde 1 – zweiter Abschnitt]"}, {"type": "text", "text": "[Hier bei Bedarf Bildblock 2 einfügen]"}, {"type": "text", "text": "[Abschluss Runde 1]"}]},
+    {"title": "Ein wenig näher", "blocks": [{"type": "text", "text": "[Text für Runde 2]"}, {"type": "text", "text": "[Hier bei Bedarf Bildblock 3 einfügen]"}, {"type": "text", "text": "[Abschluss Runde 2]"}]},
+    {"title": "Dein Moment", "blocks": [{"type": "text", "text": "[Text für Runde 3]"}, {"type": "text", "text": "[Hier bei Bedarf Bildblock 4 einfügen]"}, {"type": "text", "text": "[Ruhiger Abschluss]"}]}
+  ],
+  "closing": [{"type": "text", "text": "[Deine persönliche Einladung zum Gespräch – ganz freiwillig]\n\nDu kannst diesen Brief einfach für dich behalten. Du musst mir nichts erzählen und nicht anrufen. 🖤"}]
+}

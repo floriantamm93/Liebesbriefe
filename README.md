@@ -92,3 +92,7 @@ Die wichtigsten Farben befinden sich am Anfang von `css/style.css` unter `:root`
 ## GitHub Pages
 
 In den Repository-Einstellungen unter `Settings → Pages` den Branch `main` und den Ordner `/ (root)` als Quelle auswählen. Die ES-Module benötigen keinen Build-Schritt.
+
+## Privater Sonderbrief
+
+Die separate, verschlüsselte Seite unter `letter/private/` verwendet einen eigenen Bordeaux-/Anthrazit-Stil. Einrichtung, Passwortwechsel, private Bilder und Texte sowie lokale Tests sind in [PRIVATE-LETTER.md](PRIVATE-LETTER.md) beschrieben. Die bisherigen Briefe und ihre Passwortabfrage bleiben unverändert.

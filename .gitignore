@@ -9,3 +9,6 @@ Thumbs.db
 # Lokale temporäre Dateien
 *.tmp
 *.log
+
+# Private Klartextquellen niemals versionieren
+.private/

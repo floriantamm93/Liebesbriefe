@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#130e11">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src blob:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Ein Brief</title>
+  <link rel="stylesheet" href="./private.css">
+  <script type="module" src="./private.js"></script>
+</head>
+<body>
+  <main>
+    <section id="gate" class="gate" aria-labelledby="gate-title">
+      <div class="seal" aria-hidden="true">C</div>
+      <p class="eyebrow">Unter uns</p>
+      <h1 id="gate-title">Ein Brief. Nur für dich.</h1>
+      <p class="muted">Diesmal bekommst du deinen Brief nicht ganz so einfach.</p>
+      <form id="unlock-form">
+        <label for="password">Dein Passwort</label>
+        <input id="password" name="password" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" required maxlength="1024" aria-describedby="status">
+        <button id="open" type="submit" disabled>Brief öffnen</button>
+      </form>
+      <p id="status" role="status" aria-live="polite">Der Umschlag wird vorbereitet …</p>
+      <div id="hints"></div>
+      <a class="back" href="../../">Zurück zu den Briefen</a>
+    </section>
+    <section id="reader" hidden aria-label="Geöffneter Brief">
+      <div class="toolbar"><span class="eyebrow">Nur für dich</span><button id="lock" class="secondary" type="button">Brief schließen</button></div>
+      <article id="letter"></article>
+      <p class="endmark" aria-hidden="true">✦</p>
+    </section>
+  </main>
+  <noscript>Bitte aktiviere JavaScript, um den verschlüsselten Brief zu öffnen.</noscript>
+</body>
+</html>
