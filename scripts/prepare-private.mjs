@@ -8,6 +8,31 @@ const mediaTypes = {
   '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.avif': 'image/avif',
   '.mp3': 'audio/mpeg', '.m4a': 'audio/mp4', '.ogg': 'audio/ogg', '.opus': 'audio/ogg', '.wav': 'audio/wav', '.webm': 'audio/webm'
 };
+function localPath(source, relativePath, label) {
+  if (typeof relativePath !== 'string' || /^[a-z]+:/i.test(relativePath) || relativePath.startsWith('//') || relativePath.startsWith('\\\\')) throw new Error(`${label} muss lokal gespeichert sein.`);
+  const base = path.dirname(source);
+  const file = path.resolve(base, relativePath);
+  const relative = path.relative(base, file);
+  if (relative.startsWith('..') || path.isAbsolute(relative)) throw new Error(`${label} muss im privaten Briefordner liegen.`);
+  return file;
+}
+async function expandMarkdown(block, source) {
+  if (block.type !== 'markdown') return [block];
+  const file = localPath(source, block.file, 'Textdatei');
+  const markdown = (await readFile(file, 'utf8')).replace(/^\uFEFF/, '');
+  const result = [];
+  const pattern = /^\[\[(image|audio):([^\]\r\n]+)\]\]$/gm;
+  let cursor = 0;
+  for (const match of markdown.matchAll(pattern)) {
+    const text = markdown.slice(cursor, match.index).trim();
+    if (text) result.push({ type: 'text', text });
+    result.push({ type: match[1], file: match[2].trim() });
+    cursor = match.index + match[0].length;
+  }
+  const text = markdown.slice(cursor).trim();
+  if (text) result.push({ type: 'text', text });
+  return result;
+}
 export async function loadContent(source) {
   const input = JSON.parse((await readFile(source, 'utf8')).replace(/^\uFEFF/, ''));
   if (!Array.isArray(input.chapters) || input.chapters.length !== 3) throw new Error('Genau drei Kapitel sind erforderlich.');
@@ -15,17 +40,13 @@ export async function loadContent(source) {
   const assets = {};
   for (const blocks of [input.intro, ...input.chapters.map(c => c.blocks), input.closing]) {
     if (!Array.isArray(blocks)) throw new Error('Intro, Kapitel und Abschluss benötigen Blocklisten.');
+    const expanded = [];
+    for (const block of blocks) expanded.push(...await expandMarkdown(block, source));
+    blocks.splice(0, blocks.length, ...expanded);
     for (const block of blocks) {
-      if (block.type === 'markdown' && typeof block.file === 'string' && !/^[a-z]+:/i.test(block.file) && !block.file.startsWith('//') && !block.file.startsWith('\\\\')) {
-        const file = path.resolve(path.dirname(source), block.file);
-        if (!file.startsWith(path.dirname(source))) throw new Error('Textdateien müssen neben dem Briefentwurf liegen.');
-        block.type = 'text';
-        block.text = (await readFile(file, 'utf8')).replace(/^\uFEFF/, '');
-        delete block.file;
-      }
       if (block.type === 'text' && typeof block.text === 'string') continue;
-      if (!['image', 'audio'].includes(block.type) || typeof block.file !== 'string' || /^[a-z]+:/i.test(block.file) || block.file.startsWith('//') || block.file.startsWith('\\\\')) throw new Error('Nur Text-, Bild- oder lokale Audioblöcke sind erlaubt.');
-      const file = path.resolve(path.dirname(source), block.file);
+      if (!['image', 'audio'].includes(block.type)) throw new Error('Nur Text-, Bild- oder lokale Audioblöcke sind erlaubt.');
+      const file = localPath(source, block.file, 'Medien');
       const type = mediaTypes[path.extname(file).toLowerCase()];
       if (!type) throw new Error('Bilder müssen JPEG, PNG, WebP oder AVIF sein; Audios MP3, M4A, OGG/Opus, WAV oder WebM.');
       const data = await readFile(file);

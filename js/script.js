@@ -10,6 +10,11 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matc
 let selectedLetter = letters[0];
 let openingTimer;
 let focusTimer;
+const privateLetter = {
+  date: "02. Oktober 2026",
+  title: "Ein besonderer Brief",
+  href: "./letter/private/"
+};
 
 function escapeHtml(value) {
   const element = document.createElement("div");
@@ -78,13 +83,21 @@ function renderParagraph(paragraph, index) {
 }
 
 function renderArchive() {
-  letterList.innerHTML = letters.map((letter) => `
+  const regularLetters = letters.map((letter) => `
     <button class="archive-card" type="button" data-letter-id="${escapeHtml(letter.id)}"
       aria-pressed="${letter.id === selectedLetter.id}">
       <span class="archive-card__date">${escapeHtml(formatLetterMeta(letter))}</span>
       <span class="archive-card__title">${escapeHtml(letter.title)}</span>
     </button>
   `).join("");
+  const specialLetter = `
+    <a class="archive-card archive-card--private" href="${privateLetter.href}"
+      aria-label="${escapeHtml(`${privateLetter.title} vom ${privateLetter.date} öffnen`)}">
+      <span class="archive-card__date">${escapeHtml(privateLetter.date)}</span>
+      <span class="archive-card__title">${escapeHtml(privateLetter.title)}</span>
+    </a>
+  `;
+  letterList.innerHTML = regularLetters + specialLetter;
 }
 
 function renderLetter(letter) {

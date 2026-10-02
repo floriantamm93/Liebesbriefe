@@ -12,3 +12,4 @@ Thumbs.db
 
 # Private Klartextquellen niemals versionieren
 .private/
+.preview/

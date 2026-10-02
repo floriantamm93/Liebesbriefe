@@ -56,18 +56,39 @@ function privateAudio(asset, caption) {
   const button = text('button', 'Sprachnachricht abspielen');
   button.type = 'button';
   button.setAttribute('aria-expanded', 'false');
-  button.addEventListener('click', () => {
+  button.setAttribute('aria-pressed', 'false');
+  const status = text('p', '', 'audio-status');
+  status.hidden = true;
+  function updateButton() {
+    const playing = Boolean(audio.src) && !audio.paused && !audio.ended;
+    button.textContent = playing ? 'Sprachnachricht pausieren' : 'Sprachnachricht abspielen';
+    button.setAttribute('aria-pressed', String(playing));
+  }
+  audio.addEventListener('play', updateButton);
+  audio.addEventListener('pause', updateButton);
+  audio.addEventListener('ended', updateButton);
+  button.addEventListener('click', async () => {
     if (!audio.src) {
       const url = URL.createObjectURL(new Blob([fromBase64(asset.data)], { type: asset.type }));
       urls.add(url);
       audio.src = url;
     }
     audio.hidden = false;
-    button.hidden = true;
     button.setAttribute('aria-expanded', 'true');
-    audio.play().catch(() => {});
+    status.hidden = true;
+    if (audio.paused) {
+      try {
+        await audio.play();
+      } catch {
+        status.textContent = 'Tippe im Audioplayer auf Play, um die Nachricht zu starten.';
+        status.hidden = false;
+      }
+    } else {
+      audio.pause();
+    }
+    updateButton();
   });
-  section.append(button, audio);
+  section.append(button, audio, status);
   if (caption) section.append(text('p', caption, 'audio-caption'));
   return section;
 }

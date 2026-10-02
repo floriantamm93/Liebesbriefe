@@ -50,3 +50,15 @@ test('Packaging can assemble private Markdown chapter files', async () => {
     assert.deepEqual(payload.chapters[0].blocks, [{ type: 'text', text: 'Unveränderter Text.\n\n**Fettung** 🖤' }]);
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
+test('Markdown media markers preserve surrounding text and package local audio', async () => {
+  const directory = await mkdtemp(path.join(tmpdir(), 'letter-test-'));
+  try {
+    const source = path.join(directory, 'letter.json');
+    await writeFile(path.join(directory, 'round.md'), 'Vorher.\n\n[[audio:voice.mp3]]\n\nNachher.');
+    await writeFile(path.join(directory, 'voice.mp3'), Buffer.from([7, 8, 9]));
+    await writeFile(source, JSON.stringify({ intro: [], chapters: [{ blocks: [{ type: 'markdown', file: 'round.md' }] }, { blocks: [] }, { blocks: [] }], closing: [] }));
+    const { payload } = await loadContent(source);
+    assert.deepEqual(payload.chapters[0].blocks, [{ type: 'text', text: 'Vorher.' }, { type: 'audio', asset: 'audio-1' }, { type: 'text', text: 'Nachher.' }]);
+    assert.equal(payload.assets['audio-1'].data, 'BwgJ');
+  } finally { await rm(directory, { recursive: true, force: true }); }
+});
