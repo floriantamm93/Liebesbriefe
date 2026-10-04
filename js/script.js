@@ -11,6 +11,7 @@ let selectedLetter = letters[0];
 let openingTimer;
 let focusTimer;
 const privateLetter = {
+  id: "2026-10-02",
   date: "02. Oktober 2026",
   title: "Ein besonderer Brief",
   href: "./letter/private/"
@@ -83,21 +84,31 @@ function renderParagraph(paragraph, index) {
 }
 
 function renderArchive() {
-  const regularLetters = letters.map((letter) => `
-    <button class="archive-card" type="button" data-letter-id="${escapeHtml(letter.id)}"
-      aria-pressed="${letter.id === selectedLetter.id}">
-      <span class="archive-card__date">${escapeHtml(formatLetterMeta(letter))}</span>
-      <span class="archive-card__title">${escapeHtml(letter.title)}</span>
-    </button>
-  `).join("");
-  const specialLetter = `
-    <a class="archive-card archive-card--private" href="${privateLetter.href}"
-      aria-label="${escapeHtml(`${privateLetter.title} vom ${privateLetter.date} öffnen`)}">
-      <span class="archive-card__date">${escapeHtml(privateLetter.date)}</span>
-      <span class="archive-card__title">${escapeHtml(privateLetter.title)}</span>
-    </a>
-  `;
-  letterList.innerHTML = regularLetters + specialLetter;
+  const archiveEntries = [
+    ...letters.map((letter) => ({ id: letter.id, type: "regular", letter })),
+    { id: privateLetter.id, type: "private" }
+  ].sort((first, second) => first.id.localeCompare(second.id));
+
+  letterList.innerHTML = archiveEntries.map((entry) => {
+    if (entry.type === "private") {
+      return `
+        <a class="archive-card archive-card--private" href="${privateLetter.href}"
+          aria-label="${escapeHtml(`${privateLetter.title} vom ${privateLetter.date} öffnen`)}">
+          <span class="archive-card__date">${escapeHtml(privateLetter.date)}</span>
+          <span class="archive-card__title">${escapeHtml(privateLetter.title)}</span>
+        </a>
+      `;
+    }
+
+    const { letter } = entry;
+    return `
+      <button class="archive-card" type="button" data-letter-id="${escapeHtml(letter.id)}"
+        aria-pressed="${letter.id === selectedLetter.id}">
+        <span class="archive-card__date">${escapeHtml(formatLetterMeta(letter))}</span>
+        <span class="archive-card__title">${escapeHtml(letter.title)}</span>
+      </button>
+    `;
+  }).join("");
 }
 
 function renderLetter(letter) {
